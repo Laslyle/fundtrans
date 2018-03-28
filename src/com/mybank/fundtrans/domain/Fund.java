@@ -1,0 +1,57 @@
+package com.mybank.fundtrans.domain;
+
+import java.util.Date;
+
+public class Fund {
+private Integer id;
+private String name;
+private String description;
+private String status;
+private Double price;
+private Date createTime;
+public Fund(Integer id, String name, String description,Double price,String status, Date createTime) {
+
+	this.id = id;
+	this.name = name;
+	this.description = description;
+	this.status = status;
+	this.price = price;
+	this.createTime = createTime;
+}
+public Integer getId() {
+	return id;
+}
+public void setId(Integer id) {
+	this.id = id;
+}
+public String getName() {
+	return name;
+}
+public void setName(String name) {
+	this.name = name;
+}
+public String getDescription() {
+	return description;
+}
+public void setDescription(String description) {
+	this.description = description;
+}
+public String getStatus() {
+	return status;
+}
+public void setStatus(String status) {
+	this.status = status;
+}
+public Double getPrice() {
+	return price;
+}
+public void setPrice(Double price) {
+	this.price = price;
+}
+public Date getCreateTime() {
+	return createTime;
+}
+public void setCreateTime(Date createTime) {
+	this.createTime = createTime;
+}
+}
