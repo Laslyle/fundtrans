@@ -77,15 +77,15 @@
 							基金产品管理
 					</a>
 						<ul>
-							<li><a href="fund/fund_add.jsp" target="dmMain">新增基金产品</a></li>
-							<li><a href="" target="dmMain">基金产品查询</a></li>
+							<li><a href="fundServlet?type=5" target="dmMain">新增基金产品</a></li>
+							<li><a href="fundServlet?type=6" target="dmMain">基金产品查询</a></li>
 						</ul></li>
 					<li><a href="#" class="nav-top-item"> <!-- Add the class "no-submenu" to menu items with no sub menu -->
 							客户信息管理
 					</a>
 						<ul>
-							<li><a href="" target="dmMain">新客户开户</a></li>
-							<li><a href="" target="dmMain">客户信息列表</a></li>
+							<li><a href="ClientServlet?type=1" target="dmMain">新客户开户</a></li>
+							<li><a href="ClientServlet?type=2" target="dmMain">客户信息列表</a></li>
 						</ul></li>
 
 					<li><a href="#" class="nav-top-item current"> <!-- Add the class "no-submenu" to menu items with no sub menu -->

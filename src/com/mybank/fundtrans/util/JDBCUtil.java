@@ -12,7 +12,7 @@ import java.sql.Statement;
 public class JDBCUtil {
 	private static final String CONNURL = "jdbc:mysql://localhost:3306/fundtransdb?useUnicode=true&characterEncoding=utf8";
 	private static final String USERNAME = "root";
-	private static final String PASSWORD = "";
+	private static final String PASSWORD = "123456";
 	/*使用静态代码块完成驱动的加载*/
 	static {
 		try {

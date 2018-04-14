@@ -36,6 +36,7 @@ public class FundDaoJDBCImpl implements FundDao{
 			}
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
+			System.out.println("连接失败");
 			e.printStackTrace();
 		}finally{
 			JDBCUtil.close(null, pstmt, conn);

@@ -3,6 +3,7 @@ package com.mybank.fundtrans.controller;
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
 import java.util.Date;
+import java.util.List;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -36,7 +37,7 @@ public class fundServlet extends HttpServlet {
 		// TODO Auto-generated method stub
 		//response.getWriter().append("Served at: ").append(request.getContextPath());
 		//response.getWriter().append("Served at: ").append(request.getContextPath());
-		response.setCharacterEncoding("UTF-8");
+		request.setCharacterEncoding("UTF-8");
 		FundDao fundDao=new FundDaoJDBCImpl();
 		String type=request.getParameter("type");
 		switch (type) {
@@ -60,10 +61,10 @@ public class fundServlet extends HttpServlet {
 
 			break;
 		case "5":
-
+			request.getRequestDispatcher("fund/fund_add.jsp").forward(request, response);
 			break;
 		case "6":
-
+			request.getRequestDispatcher("fund/fund_list.jsp").forward(request, response);
 			break;
 		default:
 			break;
